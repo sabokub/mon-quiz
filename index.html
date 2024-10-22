@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quel type de gueuleton es-tu ?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>Quel type de gueuleton es-tu ?</h1>
+            <p>Réponds aux questions pour découvrir quel type de festin te correspond !</p>
+            <img src="https://scontent-cdg4-1.xx.fbcdn.net/v/t1.6435-9/68668210_2357107371069256_5291417335217782784_n.jpg?stp=dst-jpg_p526x296&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=GgZaMQ08g8YQ7kNvgEWXiBb&_nc_ht=scontent-cdg4-1.xx&_nc_gid=A1tC-lnyQVJaKReXX78Af6N&oh=00_AYAhoGtz-vTvT6v3t8l4foayAvTQVrTNwkorf2XYHW-JcQ&oe=673F05F1" alt="Illustration du quiz" class="quiz-image">
+        </header>
+        
+        <form id="quizForm">
+            <div class="question active">
+                <p class="question-text">1. Que préfères-tu manger lors d'un repas entre amis ?</p>
+                <div class="bubble"><label><input type="radio" name="q1" value="A"> Un barbecue avec des brochettes variées.</label></div>
+                <div class="bubble"><label><input type="radio" name="q1" value="B"> Un plateau de fruits de mer exquis.</label></div>
+                <div class="bubble"><label><input type="radio" name="q1" value="C"> Un apéro dînatoire avec des tapas du monde.</label></div>
+                <div class="bubble"><label><input type="radio" name="q1" value="D"> Un dîner gastronomique avec un chef étoilé.</label></div>
+            </div>
+
+            <div class="question">
+                <p class="question-text">2. Quel est ton plat préféré ?</p>
+                <div class="bubble"><label><input type="radio" name="q2" value="A"> Un burger gourmet avec tous les accompagnements.</label></div>
+                <div class="bubble"><label><input type="radio" name="q2" value="B"> Une paella aux fruits de mer et aux légumes frais.</label></div>
+                <div class="bubble"><label><input type="radio" name="q2" value="C"> Des sushis variés avec différentes garnitures.</label></div>
+                <div class="bubble"><label><input type="radio" name="q2" value="D"> Un coq au vin traditionnel fait maison.</label></div>
+            </div>
+
+            <div class="question">
+                <p class="question-text">3. Quel est ton dessert favori ?</p>
+                <div class="bubble"><label><input type="radio" name="q3" value="A"> Un tiramisu léger et crémeux.</label></div>
+                <div class="bubble"><label><input type="radio" name="q3" value="B"> Un cheesecake au fruits rouges.</label></div>
+                <div class="bubble"><label><input type="radio" name="q3" value="C"> Une mousse au chocolat noir intense.</label></div>
+                <div class="bubble"><label><input type="radio" name="q3" value="D"> Une tarte au citron meringuée.</label></div>
+            </div>
+
+            <div class="question">
+                <p class="question-text">4. Quelle boisson préfères-tu accompagner ton repas ?</p>
+                <div class="bubble"><label><input type="radio" name="q4" value="A"> Un vin rouge corsé.</label></div>
+                <div class="bubble"><label><input type="radio" name="q4" value="B"> Une bière artisanale au goût unique.</label></div>
+                <div class="bubble"><label><input type="radio" name="q4" value="C"> Un cocktail rafraîchissant fait maison.</label></div>
+                <div class="bubble"><label><input type="radio" name="q4" value="D"> Un thé glacé aux fruits.</label></div>
+            </div>
+
+            <div class="question">
+                <p class="question-text">5. Comment préfères-tu passer une soirée gourmande ?</p>
+                <div class="bubble"><label><input type="radio" name="q5" value="A"> À un festival culinaire avec des stands variés.</label></div>
+                <div class="bubble"><label><input type="radio" name="q5" value="B"> Dans un restaurant étoilé avec un menu dégustation.</label></div>
+                <div class="bubble"><label><input type="radio" name="q5" value="C"> En organisant un repas chez moi avec des amis.</label></div>
+                <div class="bubble"><label><input type="radio" name="q5" value="D"> En participant à un cours de cuisine.</label></div>
+            </div>
+
+            <div class="question">
+                <p class="question-text">6. Quelle est ta vision d'un repas parfait ?</p>
+                <div class="bubble"><label><input type="radio" name="q6" value="A"> Un repas en extérieur sous les étoiles.</label></div>
+                <div class="bubble"><label><input type="radio" name="q6" value="B"> Un buffet varié avec des spécialités du monde.</label></div>
+                <div class="bubble"><label><input type="radio" name="q6" value="C"> Un dîner intime avec un menu sur mesure.</label></div>
+                <div class="bubble"><label><input type="radio" name="q6" value="D"> Une fête surprise avec tous mes plats préférés.</label></div>
+            </div>
+
+            <button type="button" class="next-btn" onclick="nextQuestion()">Suivant</button>
+        </form>
+
+        <div id="result" class="result" style="display:none;">
+            <!-- Le résultat du quiz apparaîtra ici -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

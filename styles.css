@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.quiz-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.quiz-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.question {
+    display: none;
+}
+
+.question.active {
+    display: block;
+}
+
+.bubble {
+    display: inline-block;
+    background-color: #e29568; /* Teinte de violet plus pâle */
+    color: black;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 10px 0;
+    width: calc(100% - 20px);
+    text-align: left;
+    cursor: pointer; /* Change le curseur pour indiquer que c'est cliquable */
+    transition: background-color 0.3s; /* Transition pour un effet au survol */
+}
+
+.bubble:hover {
+    background-color: #e28148; /* Couleur violet plus foncé au survol */
+}
+
+.next-btn {
+    background-color: #eacbb2; /* Couleur vert pâle pour le bouton */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.next-btn:hover {
+    background-color: #ecc4a4; /* Couleur vert plus foncé au survol */
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
